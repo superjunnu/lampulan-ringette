@@ -1,6 +1,6 @@
 # lampulan-ringette
 MINUSTA TÄMÄ TOIMII HIENOSTI. t. Anastasia
-
+VAI TOIMIIKO?
 Tausta
 
 Toimit ohjelmistosuunnittelijana Kurpitsa Solutions -nimisessä yrityksessä, joka toteuttaa mm.
