@@ -11,16 +11,38 @@
 }
 
 .day {
-   padding: 1rem;
+   padding: 0.25rem;
    flex-basis: 0;
    flex-grow: 1;
    border: 1px solid black;
+   height: 7rem;
 }
 
 .day.empty {
    background-color: lightgrey;
 }
 
-.header {
-   
+.month-header {
+   text-align: center;
+
+}
+
+.month-header > h2 {
+  font-size: 5.5rem; 
+  margin-bottom: 0.5rem;
+}
+
+.weekday-header-container {
+   width: 100vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+.weekday-header {
+   flex-basis: 0;
+   flex-grow: 1;
+}
+
+.weekday-header > h3 {
+   text-align: center;
 }
