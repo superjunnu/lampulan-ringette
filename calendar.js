@@ -1,5 +1,5 @@
-function display() {
 
+function display() {
    let calendarHTML="";
    let today = new Date();
    let array = [];
@@ -10,6 +10,7 @@ function display() {
    let day = 1; 
    let empty_days_at_start = new Date(current_year, current_month, day).getDay() - 1;
    let header = today.toLocaleString('fi-FI', { month: 'long' });
+   calendarHTML += `<div class="calendar-container">`;
    calendarHTML += `<div class="month-header"><h2>${header}</h2></div>`;
    calendarHTML += `<div class="weekday-header-container">`;
    calendarHTML += `<div class="weekday-header"><h3>Maanantai</h3></div>`;
@@ -40,7 +41,7 @@ function display() {
       calendarHTML += `<div class="day empty"></div>`;
    }
 
-   calendarHTML += `</div></div>`;
+   calendarHTML += `</div></div></div>`;
    document.getElementById('kalenteri').innerHTML = calendarHTML;
 }
 
