@@ -1,4 +1,5 @@
 # lampulan-ringette
+MINUSTA TÄMÄ TOIMII HIENOSTI. t. Anastasia
 
 Tausta
 
