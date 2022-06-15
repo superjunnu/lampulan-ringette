@@ -1,5 +1,4 @@
 function previous_month(cur_year, cur_month) {
-   console.log("back button pressed");
    if (cur_month == 0) { 
       cur_month = 11;
       cur_year -= 1;
@@ -41,7 +40,11 @@ function display(year, month) {
    let month_and_year = start_date.toLocaleString('fi-FI', { month: 'long', year: 'numeric' });
 
    calendarHTML += `<div class="calendar-container">`;
-   calendarHTML += `<div class="calendar-header-container"><span class="prev-month" onClick="previous_month(${current_year},${current_month})"><</span><span class="month-year">${month_and_year}</span><span onClick="next_month(${current_year},${current_month})" class="next-month">></span></div>`;
+   calendarHTML += `<div class="calendar-header-container">
+                     <button class="prev-month" onClick="previous_month(${current_year},${current_month})"><</button>
+                     <span class="month-year">${month_and_year}</span>
+                     <button onClick="next_month(${current_year},${current_month})" class="next-month">></button>
+                     </div>`;
    calendarHTML += `<div class="weekday-header-container">`;
    calendarHTML += `<div class="weekday-header">Maanantai</div>`;
    calendarHTML += `<div class="weekday-header">Tiistai</div>`;
@@ -83,5 +86,6 @@ function display(year, month) {
    calendarHTML += `</div>`;
    document.getElementById('kalenteri').innerHTML = calendarHTML;
 }
-
-display(2022, 5);
+let default_month = new Date().getMonth();
+let default_year = new Date().getFullYear();
+display(default_year, default_month);

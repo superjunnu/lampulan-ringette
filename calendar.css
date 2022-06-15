@@ -5,7 +5,8 @@
 }
 
 .calendar-header-container {
-   text-align: center;
+   display: flex;
+   justify-content: space-between;
 }
 
 .month-year {
@@ -13,9 +14,16 @@
 }
 
 .prev-month, .next-month {
+   background: none;
+   border: none;
    font-size: 5.5rem;
    padding-left: 2rem;
    padding-right: 2rem;
+   border-radius: 5px;
+}
+
+.prev-month:hover, .next-month:hover {
+   font-weight: bold;
 }
 
 .weekday-header-container {
