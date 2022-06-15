@@ -1,7 +1,7 @@
 .calendar-container {
    width: 95vw;
    align: center;
-   color: #555555;
+   color: black;
 }
 .month { 
    display: flex;
@@ -46,10 +46,21 @@
    justify-content: space-around;
 }
 .weekday-header {
+   text-align: center;
    flex-basis: 0;
    flex-grow: 1;
 }
 
-.weekday-header > h3 {
-   text-align: center;
+.day-number {
+   font-size: 1.0rem;
+   font-style: underline;
+}
+
+.event-time {
+   font-size: 0.9rem;
+   font-style: bold;
+}
+
+.event-description {
+   font-size: 0.8rem;
 }

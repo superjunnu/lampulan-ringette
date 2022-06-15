@@ -9,7 +9,6 @@ function display() {
               ];
    let calendarHTML="";
    let today = new Date();
-   //let array = [];
    let current_month = today.getMonth();
    let current_year = today.getFullYear();
    let days_in_current_month = new Date(current_year, current_month + 1, 0).getDate();
@@ -41,12 +40,11 @@ function display() {
       if (Array.isArray(days_events_array) && days_events_array.length) {
          console.log(`event found at date = ${newdate}`);
          for (let i=0; i<days_events_array.length; i++) {
-            events_text += `${days_events_array[i].start_time}-${days_events_array[i].end_time} ${days_events_array[i].description}<br>`;
+            events_text += `<span class="event-time">${days_events_array[i].start_time}-${days_events_array[i].end_time}</span> <span class="event-description">${days_events_array[i].description}</span><br>`;
          }
          
       }
-      //array.push(newdate);
-      calendarHTML += `<div class="day">${day}<br>${events_text}</div>`;
+      calendarHTML += `<div class="day"><span class="day-number">${day}</span><br>${events_text}</div>`;
       if (newdate.getDay() == 0) {
          calendarHTML += `</div><div class="week">`;
       }
@@ -58,7 +56,8 @@ function display() {
       calendarHTML += `<div class="day empty"></div>`;
    }
 
-   calendarHTML += `</div></div></div>`;
+   calendarHTML += `</div></div>`;
+   calendarHTML += `</div>`;
    document.getElementById('kalenteri').innerHTML = calendarHTML;
 }
 
