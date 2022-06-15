@@ -1,8 +1,15 @@
 
 function display() {
+   let data = [
+               {date: '2022-06-24', start_time: '11:00', end_time: '12:30', description: 'Äijä-ringette vuoro'},
+               {date: '2022-06-25', start_time: '14:00', end_time: '17:00', description: 'Roskien keräystalkoot'},
+               {date: '2022-06-26', start_time: '18:00', end_time: '19:00', description: 'B-tyttöjen ringette'},
+               {date: '2022-06-26', start_time: '19:00', end_time: '20:30', description: 'Naisten maajoukkue'},
+               {date: '2022-06-28', start_time: '18:00', end_time: '20:00', description: 'Naisten maajoukkue'}
+              ];
    let calendarHTML="";
    let today = new Date();
-   let array = [];
+   //let array = [];
    let current_month = today.getMonth();
    let current_year = today.getFullYear();
    let days_in_current_month = new Date(current_year, current_month + 1, 0).getDate();
@@ -28,8 +35,18 @@ function display() {
 
    while (day <= days_in_current_month){
       let newdate = new Date(current_year, current_month, day);
-      array.push(newdate);
-      calendarHTML += `<div class="day">${day}</div>`;
+      console.log(newdate);
+      let days_events_array = data.filter((item) => item.date == newdate.toISOString().slice(0,10));
+      let events_text = "";
+      if (Array.isArray(days_events_array) && days_events_array.length) {
+         console.log(`event found at date = ${newdate}`);
+         for (let i=0; i<days_events_array.length; i++) {
+            events_text += `${days_events_array[i].start_time}-${days_events_array[i].end_time} ${days_events_array[i].description}<br>`;
+         }
+         
+      }
+      //array.push(newdate);
+      calendarHTML += `<div class="day">${day}<br>${events_text}</div>`;
       if (newdate.getDay() == 0) {
          calendarHTML += `</div><div class="week">`;
       }
