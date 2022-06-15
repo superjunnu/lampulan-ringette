@@ -3,11 +3,40 @@
    align: center;
    color: black;
 }
+
+.calendar-header-container {
+   text-align: center;
+}
+
+.month-year {
+  font-size: 5.5rem; 
+}
+
+.prev-month, .next-month {
+   font-size: 5.5rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+}
+
+.weekday-header-container {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+
+.weekday-header {
+   text-align: center;
+   flex-basis: 0;
+   flex-grow: 1;
+   font-size: 1.5rem;
+   font-weight: bold;
+   padding-bottom: 1rem;
+}
+
 .month { 
    display: flex;
    flex-direction: column;
    width: 100%;
-
 }
 
 .week {
@@ -30,35 +59,13 @@
 .day.empty {
 }
 
-.month-header {
-   text-align: center;
-
-}
-
-.month-header > h2 {
-  font-size: 5.5rem; 
-  margin-bottom: 0.5rem;
-}
-
-.weekday-header-container {
-   width: 100%;
-   display: flex;
-   justify-content: space-around;
-}
-.weekday-header {
-   text-align: center;
-   flex-basis: 0;
-   flex-grow: 1;
-}
-
 .day-number {
    font-size: 1.0rem;
-   font-style: underline;
 }
 
 .event-time {
    font-size: 0.9rem;
-   font-style: bold;
+   font-weight: bold;
 }
 
 .event-description {
