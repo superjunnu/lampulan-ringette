@@ -1,0 +1,81 @@
+.calendar-container {
+   width: 95vw;
+   align: center;
+   color: black;
+}
+
+.calendar-header-container {
+   display: flex;
+   justify-content: space-between;
+}
+
+.month-year {
+  font-size: 5.5rem; 
+}
+
+.prev-month, .next-month {
+   background: none;
+   border: none;
+   font-size: 5.5rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+   border-radius: 5px;
+}
+
+.prev-month:hover, .next-month:hover {
+   font-weight: bold;
+}
+
+.weekday-header-container {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+
+.weekday-header {
+   text-align: center;
+   flex-basis: 0;
+   flex-grow: 1;
+   font-size: 1.5rem;
+   font-weight: bold;
+   padding-bottom: 1rem;
+}
+
+.month { 
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.week {
+   display: flex;
+}
+
+.day {
+   padding: 0.25rem;
+   flex-basis: 0;
+   flex-grow: 1;
+   height: 7rem;
+   border: 1px solid white;
+   font-size: 0.75rem;
+}
+
+.day:not(.empty) {
+   background-color: pink;
+}
+
+.day.empty {
+}
+
+.day-number {
+   font-size: 1.0rem;
+}
+
+.event-time {
+   font-size: 0.9rem;
+   font-weight: bold;
+}
+
+.event-description {
+   font-size: 0.8rem;
+}
