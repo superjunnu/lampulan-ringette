@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*navigointipalkki*/
+.menu {
+    overflow: hidden;
+    background-color: #262626; 
+}
+
+.menu a { 
+    float: left;
+    display: block;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*kursoori linkin päälle - taustaväri muuttuu*/
+.menu a:hover {
+    background-color: #FEEB50;
+    color:#000;
+}
+
+/*valittu linkki - taustaväri muuttuu*/
+.menu a.active {
+    background-color: #FE0184;
+    color: #fff;
+}
+
+/*hamburger menu pienillä näyttöillä*/
+.menu .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+        float: right;
+        display: block;
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    .menu.responsive {position: relative;}
+    .menu.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .menu.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+/*sivujen kuvat*/
+.home_background, .groups_background, .events_background, .contacts_background {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/*etusivun logo*/
+.logo .logo_img {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    height: 350px;   
+}
+
+@media only screen and (max-width: 768px){ 
+    .logo .logo_img {
+    width: 250px;
+    height: 250px;
+    }  
+}
+
+@media only screen and (max-width: 600px){ 
+    .logo .logo_img {
+    width: 150px;
+    height: 150px;
+    }  
+}
+
+/*sivujen otsikot ja tekstit*/
+h1, h2 {
+    margin-top: 43px;
+    margin-bottom: 43px;
+    color:#262626;
+    text-align: center;
+    font-size: 43px;
+    font-weight:300;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.info .info_text, .groups .groups_text, .flex-container .contacts_text {
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: justify;
+    font-size: 20px;
+    color: #262626;
+    margin-bottom:50px;
+}
+
+.info .info_text span, .groups .groups_text span, .flex-container .contacts_text span {
+    color: #FE0184;
+    font-weight: bold;
+}
+
+/*yhteystiedot flexillä*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+.contacts_text {
+    flex: 50%;
+}
+
+/*footeri*/
+footer {
+    width: 100%;
+    min-height: 166px;
+    background-color: #262626;
+    padding-top: 40px;
+}
+
+.footer {
+    color: #FEEB50;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.footer .copyright {
+    color:#A5A3A3;
+    font-size: 6px;
+    margin-top: 20px;
+    
+}
+
+
+/* footer a { 
+    color: #888888;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+.underlined {
+    text-decoration: underline;
+ } */
