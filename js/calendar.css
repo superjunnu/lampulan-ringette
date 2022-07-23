@@ -62,7 +62,7 @@
 }
 
 .day:not(.empty) {
-  background-color: pink;
+  background-color: #FE0184;
 }
 
 .day.empty {
