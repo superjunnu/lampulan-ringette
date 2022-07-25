@@ -27,11 +27,26 @@ function calendar(year, month) {
 
    // Vähän testidataa kalenteriin
    let data = [
-               {date: '2022-06-24', start_time: '11:00', end_time: '12:30', description: 'Äijä-ringette vuoro'},
-               {date: '2022-06-25', start_time: '14:00', end_time: '17:00', description: 'Roskien keräystalkoot'},
-               {date: '2022-06-26', start_time: '18:00', end_time: '19:00', description: 'B-tyttöjen ringette'},
-               {date: '2022-06-26', start_time: '19:00', end_time: '20:30', description: 'Naisten maajoukkue'},
-               {date: '2022-06-28', start_time: '18:00', end_time: '20:00', description: 'Naisten maajoukkue'}
+               {date: '2022-07-24', start_time: '11:00', end_time: '12:30', description: 'G-tytöt'},
+               {date: '2022-07-25', start_time: '14:00', end_time: '17:00', description: 'F-tytöt'},
+               {date: '2022-07-26', start_time: '18:00', end_time: '19:00', description: 'E-tytöt'},
+               {date: '2022-07-26', start_time: '19:00', end_time: '20:30', description: 'G-tytöt'},
+               {date: '2022-07-28', start_time: '18:00', end_time: '20:00', description: 'F-tytöt'},
+               {date: '2022-07-17', start_time: '11:00', end_time: '12:30', description: 'G-tytöt'},
+               {date: '2022-07-18', start_time: '14:00', end_time: '17:00', description: 'F-tytöt'},
+               {date: '2022-07-19', start_time: '18:00', end_time: '19:00', description: 'E-tytöt'},
+               {date: '2022-07-19', start_time: '19:00', end_time: '20:30', description: 'G-tytöt'},
+               {date: '2022-07-21', start_time: '18:00', end_time: '20:00', description: 'F-tytöt'},
+               {date: '2022-07-10', start_time: '11:00', end_time: '12:30', description: 'G-tytöt'},
+               {date: '2022-07-11', start_time: '14:00', end_time: '17:00', description: 'F-tytöt'},
+               {date: '2022-07-12', start_time: '18:00', end_time: '19:00', description: 'E-tytöt'},
+               {date: '2022-07-12', start_time: '19:00', end_time: '20:30', description: 'G-tytöt'},
+               {date: '2022-07-14', start_time: '18:00', end_time: '20:00', description: 'F-tytöt'},
+               {date: '2022-07-03', start_time: '11:00', end_time: '12:30', description: 'G-tytöt'},
+               {date: '2022-07-04', start_time: '14:00', end_time: '17:00', description: 'F-tytöt'},
+               {date: '2022-07-05', start_time: '18:00', end_time: '19:00', description: 'E-tytöt'},
+               {date: '2022-07-05', start_time: '19:00', end_time: '20:30', description: 'G-tytöt'},
+               {date: '2022-07-07', start_time: '18:00', end_time: '20:00', description: 'F-tytöt'}
               ];
 
    // Tähän muuttujaan kirjoitetaan kalenterin HTML-koodi pala palalta
