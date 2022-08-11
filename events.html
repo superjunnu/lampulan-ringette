@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/calendar.css"
+      media="screen"
+    />
+
+    <title>Lampulan Ringette</title>
+  </head>
+  <body>
+    <!--"hamburger menu" kuvake navigointipalkkiin pienillä näyttöillä-->
+    <script>
+      function myFunction() {
+        let x = document.getElementById("myMenu");
+        if (x.className === "menu") {
+          x.className += " responsive";
+        } else {
+          x.className = "menu";
+        }
+      }
+    </script>
+
+    <div class="header">
+      <div class="menu" id="myMenu">
+        <a href="index.html">Lampulan Ringette</a>
+        <a href="groups.html">Ryhmät</a>
+        <a href="#" class="active">Tapahtumat</a>
+        <a href="contacts.html">Yhteystiedot</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="events">
+      <img
+        src="images/sit-g297f367b8_1920_pixabay.jpg"
+        alt="Sits in a sporthall. Photo from Pixabay."
+        class="events_background"
+      />
+      <h1>Tapahtumakalenteri</h1>
+      <div id="kalenteri">
+        <script src="js/calendar.js" async></script>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="contact">
+          <p>
+            Lampulan Ringette ry<br />
+            Lampulantie 1<br />
+            01234 Lampula
+          </p>
+        </div>
+        <div class="copyright">
+          <p>Copyright &copy; 2022 Kurpitsa Solutions</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
