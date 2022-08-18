@@ -22,8 +22,8 @@
   <body>
     <!--"hamburger menu" kuvake navigointipalkkiin pienillä näyttöillä-->
     <script>
-      function hamburgerMenu() {
-        let x = document.getElementById("myMenu");
+      function myFunction() {
+        let x = document.getElementsByClassName("menu")[0];
         if (x.className === "menu") {
           x.className += " responsive";
         } else {
